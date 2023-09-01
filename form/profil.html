@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML FORM</title>
+</head>
+
+<body>
+    <center>
+        <h1>Halaman Profil</h1>
+        <form method="get" name="form-login">
+            <label for="username">Username</label><br>
+            <input type="text" name="username" id="username" required placeholder="Masukkan username" value="admin"><br>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" readonly value="email@gmail.com"><br>
+            <label>Password</label><br>
+            <input type="password" name="password" placeholder="Masukkan password" required value="12345"><br>
+            <label>Role Radio</label><br>
+            <input type="radio" name="role" checked disabled>Admin<br>
+            <input type="radio" name="role" checked disabled>Mahasiswa<br>
+            <label>Role Select</label><br>
+            <select disabled>
+                <option>Pilih</option>
+                <option value="admin" selected>Admin</option>
+                <option value="mahasiswa">Mahasiswa</option>
+            </select><br>
+            <label>Opsi</label><br>
+            <input type="checkbox" checked disabled>Pilihan 1<br>
+            <input type="checkbox" disabled>Pilihan 2<br>
+            <input type="checkbox" checked>Pilihan 3<br>
+            <label>Deskripsi</label><br>
+            <textarea rows="2" placeholder="Masukkan deskripsi"></textarea><br>
+            <button type="submit">Button Login</button>
+        </form>
+    </center>
+
+</body>
+
+</html>

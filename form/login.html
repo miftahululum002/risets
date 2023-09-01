@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Login</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+
+<body>
+    <center>
+        <div class="box">
+            <h1 class="text-header">Silahkan masukkan informasi akun Anda untuk mengakses dashboard</h1>
+            <img src="../assets/image.png" class="logo"><br>
+            <div class="container-bantuan">
+                <span class="text-danger">*</span> <b>Wajib diisi</b>
+            </div>
+            <div class="kolom">
+                <div class="box-small">
+                    <form method="get" name="form-login" class="mt-1">
+                        <div class="mb-1">
+                            <label for="username">Username <span class="text-danger">*</span></label><br>
+                            <input type="text" id="username" name="username" placeholder="Masukkan username"
+                                required><br>
+                        </div>
+                        <div class="mb-1">
+                            <label for="password">Password <span class="text-danger">*</span></label><br>
+                            <input type="password" id="password" name="password" placeholder="Masukkan password"
+                                required><br>
+                        </div>
+                        <div class="mb-1">
+                            <img src="../assets/captcha.jpg" class="captcha">
+                        </div>
+                        <div class="mb-1">
+                            <label for="captcha">Captcha <span class="text-danger">*</span></label>
+                            <input type="text" id="captcha" name="captcha" placeholder="Masukkan captcha" required><br>
+                        </div>
+                        <button type="submit" class="btn-login">Login</button>
+                    </form>
+                </div>
+                <div class="box-small">
+                    <center class="mt-2">
+                        <video controls src="../assets/video.mp4" class="video" width="100%"></video>
+                    </center>
+                </div>
+            </div>
+
+        </div>
+    </center>
+</body>
+
+</html>

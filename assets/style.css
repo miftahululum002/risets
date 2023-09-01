@@ -1,0 +1,97 @@
+* {
+  color: black;
+}
+.text-center {
+  text-align: center;
+}
+
+.box {
+  margin-top: 80px;
+  width: 60%;
+  text-align: left;
+  padding: 15pt;
+  margin: 15pt;
+  border: solid 1px black;
+}
+.kolom {
+  display: flex;
+}
+
+.box-small {
+  width: 50% !important;
+  padding: 10px;
+}
+
+.text-header {
+  font-weight: 800;
+  font-size: 36pt;
+  text-align: center;
+  color: blue;
+}
+.container-bantuan {
+  height: 20pt;
+  background-color: aqua;
+  padding: 10pt;
+}
+.container-bantuan p {
+  /* font-weight: 800; */
+  color: red;
+}
+
+.text-danger {
+  color: red;
+}
+
+.logo {
+  width: 250px;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+input {
+  width: 100%;
+  height: 30px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.btn-login {
+  background-color: aqua;
+  border: 1px solid rebeccapurple;
+  border-radius: 10px 10px 10px 10px;
+  width: 100%;
+  font-size: 18pt;
+  height: 30pt;
+}
+
+.btn-login:hover {
+  background-color: rebeccapurple;
+  color: white;
+}
+
+.captcha {
+  height: 40px;
+}
+
+.video {
+  border-radius: 10px;
+  border-radius: 10px solid black;
+}
