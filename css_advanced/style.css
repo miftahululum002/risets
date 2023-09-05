@@ -1,0 +1,122 @@
+.rounded1 {
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px 25px 25px 25px;
+  /* border-radius: 25px 0 0 0; */
+}
+
+.border-image {
+  border: 10px solid transparent;
+  padding: 150px;
+  margin: 10px;
+  border-image: url("captcha.jpg") 10 round;
+  border-image-repeat: repeat;
+}
+
+.multi-image {
+  background-image: url("captcha.jpg"), url("image.png");
+  background-position: top left, bottom left;
+  background-repeat: repeat-x, no-repeat;
+  background-size: contain, cover;
+  width: 100px;
+  height: 200px;
+}
+
+.multi-image1 {
+  background-image: url("captcha.jpg");
+  background-repeat: repeat-x;
+  background-size: contain;
+  width: 100px;
+  height: 200px;
+}
+
+.multi-image2 {
+  background-image: url("captcha.jpg");
+  background-repeat: repeat-x;
+  background-size: auto;
+  width: 100px;
+  height: 200px;
+  opacity: 0.5;
+}
+
+.p1 {
+  background-color: rgb(98, 166, 235);
+}
+.p2 {
+  background-color: hsl(101, 90%, 69%);
+}
+.p3 {
+  background-color: hsla(120, 100%, 50%, 0.3);
+}
+.p4 {
+  background-color: red;
+  opacity: 0.5;
+}
+
+@font-face {
+  font-family: miftahFont;
+  src: url("poppins/Poppins-Black.otf");
+}
+
+@font-face {
+  font-family: fontKu;
+  src: url("poppins/Poppins-SemiBold.otf");
+}
+
+.text-satu {
+  font-family: miftahFont;
+}
+
+.text-dua {
+  font-family: fontKu;
+}
+@keyframes animasi1 {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: yellow;
+  }
+}
+
+@keyframes animasi2 {
+  0% {
+    background-color: red;
+    animation-direction: reverse;
+  }
+  50% {
+    animation-direction: normal;
+    background-color: yellow;
+  }
+}
+
+#transform {
+  background-color: green;
+  height: 100px;
+  width: 200px;
+  animation-name: animasi2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+#animation {
+  background-color: blue;
+  height: 100px;
+  width: 200px;
+  animation-name: animasi1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+#transition {
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  transition: ease-out 2s;
+}
+
+#transition:hover {
+  width: 500px;
+  color: blue;
+}
