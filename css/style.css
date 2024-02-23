@@ -1,0 +1,229 @@
+.rcorners1 {
+  border-radius: 25px;
+  background: #73ad21;
+  padding: 20px;
+  height: 200px;
+  width: 150px;
+  margin: 10px;
+}
+.rcorners2 {
+  border-radius: 25px;
+  background: #73ad21;
+  border: 2px solid #73ad21;
+  padding: 20px;
+  height: 200px;
+  width: 150px;
+  margin: 10px;
+}
+
+.rounded-corner {
+  border-radius: 10px 20px 10px 20px;
+  background: url("images/background.jpg");
+  background-position: left top;
+  padding: 10px;
+  height: 200px;
+  width: 100px;
+}
+
+.border-img {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url("images/background.jpg") 30 round;
+}
+
+.multi-gambar {
+  height: 160px;
+  width: 200px;
+  background-image: url("images/bg.jpeg"), url("images/background.jpg");
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+}
+
+.icon1 {
+  background-image: url("images/bg.jpeg"), url("images/background.jpg");
+  background-position: 0 0;
+  width: 32px;
+  height: 32px;
+}
+
+/* .icon2 {
+  background-image: url("images/background.jpg");
+  background-position: -32px 0;
+  width: 32px;
+  height: 32px;
+} */
+
+.multi-gambar {
+  background-image: url("images/bg.jpeg"), url("images/background.jpg");
+  background-position: left top, right bottom;
+  background-repeat: no-repeat, repeat-x;
+  background-size: contain, cover;
+  width: 100px;
+  height: 200px;
+}
+
+.div-satu {
+  background: url("images/background.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+}
+.div-dua {
+  background: url("images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100px;
+}
+
+.latar-satu {
+  background: url("images/background.jpg");
+  background-repeat: no-repeat;
+  height: 100px;
+  padding: 35px;
+  background-origin: border-box;
+}
+.latar-dua {
+  background: url("images/background.jpg");
+  background-repeat: no-repeat;
+  height: 100px;
+  padding: 35px;
+  background-origin: content-box;
+}
+
+.p1 {
+  background-color: rgba(255, 99, 71, 0.5);
+}
+.p2 {
+  background-color: hsl(120, 100%, 50%);
+}
+
+.p3 {
+  background-color: hsla(120, 100%, 50%, 0.3);
+}
+
+.p4 {
+  background-color: #73ad21;
+  opacity: 0.8;
+}
+
+.gradient-satu {
+  background-image: linear-gradient(red, yellow);
+}
+.gradient-dua {
+  background-image: linear-gradient(to right, red, yellow);
+}
+.gradient-tiga {
+  background-image: linear-gradient(10deg, red, yellow);
+}
+.gradient-radial {
+  height: 100px;
+  background-image: radial-gradient(circle, red, yellow);
+}
+
+.gradient-conic {
+  height: 50px;
+  background-image: conic-gradient(red, yellow, green);
+}
+
+.shadow {
+  text-shadow: 2px 2px;
+}
+.shadow-lagi {
+  text-shadow: 2px 2px red;
+}
+
+.shadow-lain {
+  text-shadow: 2px 2px 2px red;
+}
+
+.box-shadow {
+  box-shadow: 5px 5px;
+}
+.box-shadow-lain {
+  box-shadow: 5px 5px lightblue;
+}
+
+@font-face {
+  font-family: FontKu;
+  src: url("fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: FontKuLain;
+  src: url("fonts/fontello.eot");
+}
+h2 {
+  font-family: FontKu;
+}
+
+h3 {
+  font-family: FontKuLain;
+}
+
+@keyframes animasi1 {
+  form {
+    background-color: red;
+  }
+  to {
+    background-color: yellowgreen;
+  }
+}
+.animation {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  animation-name: animasi1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.animation-lain {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes example {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.transition {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+
+.transition:hover {
+  width: 400px;
+}
